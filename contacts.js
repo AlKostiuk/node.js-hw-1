@@ -1,6 +1,5 @@
 const { error } = require("node:console");
 
-
 const fs = require("node:fs/promises");
 const path = require("node:path");
 const crypto = require("node:crypto");
@@ -8,7 +7,7 @@ const crypto = require("node:crypto");
 const contactsPath = path.join(__dirname, "db/contacts.json");
 
 async function read() {
-  const data = await fs.readFile(contactsPath, "utf8");
+  const data = await fs.readFile(contactsPath, "utf-8");
   return JSON.parse(data);
 }
 function write(data) {
@@ -23,7 +22,8 @@ async function listContacts() {
 
 async function getContactById(contactId) {
   const data = await read();
-  return data.find((contact) => contact.id === contactId);
+  const contactFind = data.find((contact) => contact.id === contactId);
+  return contactFind || null;
 }
 
 async function removeContact(contactId) {
@@ -51,9 +51,8 @@ async function addContact(name, email, phone) {
 }
 
 module.exports = {
-    listContacts,
-    getContactById,
-    removeContact,
-    addContact,
-
-  };
+  listContacts,
+  getContactById,
+  removeContact,
+  addContact,
+};

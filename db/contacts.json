@@ -18,12 +18,6 @@
     "phone": "(692) 802-2949"
   },
   {
-    "id": "05olLMgyVQdWRwgKfg5J6",
-    "name": "Cyrus Jackson",
-    "email": "nibh@semsempererat.com",
-    "phone": "(501) 472-5218"
-  },
-  {
     "id": "1DEXoP8AuCGYc1YgoQ6hw",
     "name": "Abbot Franks",
     "email": "scelerisque@magnis.org",
@@ -54,19 +48,9 @@
     "phone": "(748) 206-2688"
   },
   {
-    "id": "332f20ac-ad3a-42a6-9e44-c2f7cf121d51",
-    "name": {
-      "name": "Mango",
-      "email": "mango@gmail.com",
-      "phone": "322-22-22"
-    }
-  },
-  {
-    "id": "f96ffd4c-593d-4422-b5c2-b64e22aa7012",
-    "name": {
-      "name": "Mango",
-      "email": "mango@gmail.com",
-      "phone": "322-22-22"
-    }
+    "id": "80bd5900-ffe0-4e38-9e77-6fe04cc8c570",
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22"
   }
 ]
